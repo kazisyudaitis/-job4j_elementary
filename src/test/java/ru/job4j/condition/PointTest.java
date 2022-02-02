@@ -41,4 +41,13 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when01to31to00then2dot23() {
+        Point c = new Point(0, 3, 0);
+        Point d = new Point(1, 1, 0);
+        double expected = 2.23;
+        double out = c.distance(d);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
